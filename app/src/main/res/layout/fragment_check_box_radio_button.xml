@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".ui.home.CheckBoxRadioButtonFragment">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customborder"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radioYes" />
+
+        <RadioButton
+            android:id="@+id/radioNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radioNo" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/customborder"
+        android:orientation="vertical"
+        tools:context=".ui.home.CheckBoxRadioButtonFragment">
+
+        <CheckBox
+            android:id="@+id/checkbox_meat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/toppingMeat" />
+
+        <CheckBox
+            android:id="@+id/checkbox_cheese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/toppingCheese" />
+
+        <CheckBox
+            android:id="@+id/checkbox_vegetables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/toppingVegitables" />
+
+        <CheckBox
+            android:id="@+id/checkbox_sauce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/toppingSauce" />
+    </LinearLayout>
+
+
+</LinearLayout>

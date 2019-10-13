@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+    </group>
+
+    <item
+        android:id="@+id/nav_textView"
+        android:title="TextView Example"
+        android:icon="@drawable/ic_menu_textview" />
+
+    <item
+        android:id="@+id/nav_editTextFragment"
+        android:title="EditText Example"
+        android:icon="@drawable/ic_menu_edittext" />
+
+    <item
+        android:id="@+id/nav_checkBoxRadioButtonFragment"
+        android:title="Checkbox Example"
+        android:icon="@drawable/ic_menu_radiobuttons" />
+
+    <item
+        android:id="@+id/nav_autoCompleteTextFragment"
+        android:title="Autocomplete Example"
+        android:icon="@drawable/ic_menu_autocomplete" />
+
+    <item
+        android:id="@+id/nav_studentFragment"
+        android:title="Student List"
+        android:icon="@drawable/ic_menu_studentlist" />
+</menu>

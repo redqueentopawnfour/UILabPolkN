@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="edu.uw.tcss450.polkn.uilab.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_textView"
+        android:name="edu.uw.tcss450.polkn.uilab.ui.home.TextViewFragment"
+        android:label="@string/menu_textView"
+        tools:layout="@layout/fragment_text_view" /><action android:id="@+id/action_global_nav_textView" app:destination="@id/nav_textView"/>
+    <fragment
+        android:id="@+id/nav_editTextFragment"
+        android:name="edu.uw.tcss450.polkn.uilab.ui.home.EditTextFragment"
+        android:label="@string/menu_editText"
+        tools:layout="@layout/fragment_edit_text" />
+    <fragment
+        android:id="@+id/nav_checkBoxRadioButtonFragment"
+        android:name="edu.uw.tcss450.polkn.uilab.ui.home.CheckBoxRadioButtonFragment"
+        android:label="@string/menu_checkBoxes"
+        tools:layout="@layout/fragment_check_box_radio_button" />
+    <fragment
+        android:id="@+id/nav_autoCompleteTextFragment"
+        android:name="edu.uw.tcss450.polkn.uilab.ui.home.AutoCompleteTextFragment"
+        android:label="@string/menu_autoComplete"
+        tools:layout="@layout/fragment_auto_complete_text" />
+    <fragment
+        android:id="@+id/nav_studentFragment"
+        android:name="edu.uw.tcss450.polkn.uilab.ui.home.StudentFragment"
+        android:label="Student List"
+        tools:layout="@layout/fragment_student_list" >
+        <action
+            android:id="@+id/action_nav_studentFragment_to_viewStudentFragment"
+            app:destination="@id/nav_viewStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_viewStudentFragment"
+        android:name="edu.uw.tcss450.polkn.uilab.ui.home.ViewStudentFragment"
+        android:label="fragment_view_student"
+        tools:layout="@layout/fragment_view_student" />
+
+</navigation>
